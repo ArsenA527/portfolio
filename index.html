@@ -121,70 +121,97 @@ CRM automation, data parsing pipelines and AI content generation systems.
 
 <div class="project">
 
-<h3>AI Automation Agent</h3>
+<h3>AI Business Assistant with RAG Memory</h3>
 
 <p>
-AI agent that processes user queries, searches information and generates responses automatically.
+AI agent that uses RAG (Retrieval Augmented Generation) memory to answer user questions with high accuracy, using company knowledge stored in a database.
 </p>
 
 <p>
-<b>Tech:</b> n8n • OpenAI • Telegram • Tavily • Serper
+The agent retrieves relevant information from a Supabase PostgreSQL knowledge base and combines it with LLM reasoning to generate contextual responses — allowing the assistant to behave as if it deeply understands the business.
 </p>
 
-<img src="images/ai-agent-workflow.png">
+<p>
+<b>Flow:</b> User → Telegram / API → n8n → Vector Search → Supabase PostgreSQL → LLM → Response
+</p>
+
+<p>
+<b>Tech:</b> n8n • OpenAI • RAG • Supabase • PostgreSQL • Vector Search • Telegram
+</p>
+
+<img src="images/images/SuperRAG-Agent.jpg">
 
 </div>
 
 
 <div class="project">
 
-<h3>Lead Processing Automation</h3>
+<h3>AI UGC Video Generation Automation</h3>
 
 <p>
-Automation system for processing incoming leads and distributing them to CRM and managers.
+Automation system that generates professional UGC-style marketing videos of any length from a single image.
 </p>
 
 <p>
-<b>Flow:</b> Form → Webhook → n8n → CRM → Notification
+The system automatically transforms a product photo into a dynamic video by combining AI video generation, script creation, voice synthesis and automated scene assembly.
 </p>
 
-<img src="images/lead-automation.png">
+<p>
+The workflow allows businesses to generate marketing videos at scale without manual video production.
+</p>
+
+<p>
+<b>Flow:</b> Image Upload → n8n → Script Generation → AI Video Generation → Voice Over → Scene Assembly → Final Video
+</p>
+
+<p>
+<b>Tech:</b> n8n • AI Video Generation • OpenAI • Image-to-Video • Voice AI • API Integrations
+</p>
+
+<img src="images/Shorts.jpg">
 
 </div>
 
 
 <div class="project">
 
-<h3>AI Content Generation Pipeline</h3>
+<h3>Multi-Agent AI Personal Assistant</h3>
 
 <p>
-Automated system that generates and stores content using AI.
+AI assistant that manages daily tasks, schedules, contacts and communication while staying connected to the internet for real-time information.
 </p>
 
 <p>
-<b>Flow:</b> Input → AI analysis → Content generation → Storage
-</p>
-
-<img src="images/content-pipeline.png">
-
-</div>
-
-
-<div class="project">
-
-<h3>Multi Workflow Automation System</h3>
-
-<p>
-System of interconnected workflows automating multiple business processes.
+The assistant can analyze files, images and voice messages, retrieve news and web data, manage contacts and automatically send emails.
 </p>
 
 <p>
-Includes data processing, AI content generation and automated reporting.
+The system uses a multi-agent architecture where different AI agents handle specific tasks such as web search, scheduling, file analysis and communication.
 </p>
 
-<img src="images/multi-workflow.png">
+<p>
+<b>Capabilities:</b>
+</p>
 
-</div>
+<ul>
+<li>Manage schedules and reminders</li>
+<li>Store and retrieve contacts</li>
+<li>Search the internet and analyze news</li>
+<li>Analyze images and documents</li>
+<li>Process voice messages</li>
+<li>Send automated emails</li>
+<li>Coordinate multiple AI agents for complex tasks</li>
+</ul>
+
+<p>
+<b>Flow:</b> User → Telegram / API → n8n → Task Router → Multi AI Agents → External APIs → Response / Action
+</p>
+
+<p>
+<b>Tech:</b> n8n • OpenAI • Tavily • Perplexity • Multi-Agent Systems • API Integrations
+</p>
+
+<img src="images/UltimateAssistant.jpg">
 
 </div>
 
